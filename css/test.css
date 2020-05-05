@@ -1,0 +1,596 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: #232323;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .rocket-font{
+      font-family: 'Audiowide', cursive;
+  }
+
+  .topnav {
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  
+/*
+
+  .button {
+    display: block;
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin: 16px auto;
+  }
+  
+  .button:hover {
+    background-color: #346494;
+    color: white;
+  }
+  */
+
+  body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /* The dots/bullets/indicators 
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+  */
+  
+  /* Fading animation */
+  
+  .size-img {
+    height: auto;
+    width: auto;
+  }
+  
+  
+  .logo {
+    width: auto;
+    height: 50px;
+    text-align: center;
+    margin: 0px 0px 32px 0px;
+  }
+  
+  .logo img {
+    display: inline-block;
+  }
+  
+  ul {
+    padding-inline-start: 0px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .gray {
+    color: #707070;
+  }
+  
+  footer {
+    background-color: black;
+  }
+  
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    background: black;
+  }
+  
+  @media only screen and (min-width: 766px) {
+  
+  
+    .menu {
+      display: flex;
+      justify-content: flex-end;
+      list-style-type: none;
+    }
+  
+    input {
+      display: none;
+    }
+  
+    .menu-li {
+      padding: 16px 16px;
+      color: black;
+    }
+  
+    .logo img {
+      display: flex;
+      margin: 16px;
+    }
+  
+    ul.menu {
+      margin: 20px 0px -68px 0px;
+    }
+  
+    .menu-li:hover {
+      color: black;
+      background-color: #DBF4F1;
+      padding: 16px;
+      transition: all 0.6s ease 0s;
+    }
+  
+    /*dropdown*/
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+  
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: black;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+  
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: #DBF4F1;
+      transition: all 0.6s ease 0s;
+    }
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+  
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+  
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+    .display-title {
+      display: none;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 300px) {
+  
+    .prev,
+    .next,
+    .text {
+      font-size: 11px
+    }
+  }
+  
+  
+  @media only screen and (max-width: 765px) {
+  
+    body {
+      margin: 0;
+      padding: 0;
+      background: white;
+      color: #232323;
+      font-family: "Avenir Next", "Avenir", sans-serif;
+    }
+  
+    .home-title {
+      padding: 32px 0px 16px 0px;
+      font-size: 22px;
+    }
+  
+    .menuToggle {
+      display: block;
+      position: relative;
+      top: 50px;
+      left: 50px;
+  
+      z-index: 1;
+  
+      -webkit-user-select: none;
+      user-select: none;
+    }
+  
+    .menuToggle a {
+      text-decoration: none;
+      color: #f1faee;
+  
+      transition: color 0.3s ease;
+    }
+  
+    .menuToggle a:hover {
+      color: #f1faee;
+    }
+  
+  
+    .menuToggle input {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+  
+      cursor: pointer;
+  
+      opacity: 0;
+      z-index: 2;
+  
+      -webkit-touch-callout: none;
+    }
+  
+    .menuToggle span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+  
+      background: #232323;
+      border-radius: 3px;
+  
+      z-index: 1;
+  
+      transform-origin: 4px 0px;
+  
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+    }
+  
+    .menuToggle span:first-child {
+      transform-origin: 0% 0%;
+    }
+  
+    .menuToggle span:nth-last-child(2) {
+      transform-origin: 0% 100%;
+    }
+  
+    .menuToggle input:checked~span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #f1faee;
+    }
+  
+    .menuToggle input:checked~span:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+  
+    .menuToggle input:checked~span:nth-last-child(2) {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+  
+    .menu {
+      position: absolute;
+      width: 300px;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 125px;
+  
+      background: #1d3557;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+  
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+  
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+  
+    .menu li {
+      padding: 32px 0px 0px 0px;
+      ;
+      font-size: 22px;
+    }
+  
+    .menuToggle input:checked~ul {
+      transform: none;
+    }
+  
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .topnav {
+      position: relative;
+      overflow: hidden;
+      background-color: #333;
+    }
+  
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+  
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  
+    .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+  
+    .topnav-centered a {
+      float: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .topnav-right {
+      float: right;
+    }
+  
+  
+    /*do i need it?*/
+    .top {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .center-text {
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .button {
+      display: block;
+      width: 30%;
+      border-radius: 10px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      margin: 16px auto;
+    }
+  
+    .button:hover {
+      background-color: #346494;
+      color: white;
+    }
+  
+    body {
+      font-family: Verdana, sans-serif;
+      margin: 0
+    }
+  
+    img {
+      vertical-align: middle;
+    }
+  
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+  
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+  
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+  
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+  
+      to {
+        opacity: 1
+      }
+    }
+  
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+  
+      to {
+        opacity: 1
+      }
+    }
+  
+    .size-img {
+      height: auto;
+      width: auto;
+    }
+  
+    .hover-footer:hover {
+      color: white;
+    }
+  
+    .footer-row {
+      flex-direction: column;
+    }
+  
+    /*insert medie mobile here*/
+  
+    .logo {
+      width: auto;
+      height: 50px;
+      text-align: center;
+      margin: 0px 0px 32px 0px;
+    }
+  
+    .logo img {
+      display: inline-block;
+    }
+  
+    .gray-text-color {
+      color: #707070;
+    }
+  
+    .end-text {
+      background-color: black;
+      margin: 0px;
+      text-decoration: none;
+      color: white;
+      list-style-type: none;
+    }
+  
+    .gray-text {
+      color: #707070;
+      padding: 0px 0px 32px 64px;
+  
+    }
+  
+    .li-text {
+      padding: 16px 0px 0px 0px;
+    }
+  
+    ul {
+      padding-inline-start: 0px;
+    }
+  
+  
+    h3 {
+      margin: 0px;
+      padding: 48px 0px 32px 64px;
+      color: white;
+    }
+  
+    a {
+      text-decoration: none;
+    }
+  
+    .gray {
+      color: #707070;
+    }
+  
+    div.center-text.footer {
+      background-color: black;
+    }
+  
+    footer {
+      background-color: black;
+    }
+  
+    .dropbtn {
+      display: none;
+    }
+  
+    .display-title {
+      display: block;
+      color: #f1faee;
+    }
+  
+    .display-title:hover {
+      color: #a8dadc;
+      transition: 0.6s ease;
+    }
+  
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .padding-inside-hamburger {
+      padding: 16px 0px 0px 0px;
+    }
+  
+  
+  }
+  
