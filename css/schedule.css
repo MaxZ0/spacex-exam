@@ -51,28 +51,6 @@ body {
   .topnav-right {
     float: right;
   }
-  
-/*
-
-  .button {
-    display: block;
-    width: 30%;
-    border-radius: 10px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    margin: 16px auto;
-  }
-  
-  .button:hover {
-    background-color: #346494;
-    color: white;
-  }
-  */
 
   body {
     font-family: Verdana, sans-serif;
@@ -82,26 +60,6 @@ body {
   img {
     vertical-align: middle;
   }
-
-  /* The dots/bullets/indicators 
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active,
-  .dot:hover {
-    background-color: #717171;
-  }
-  */
-  
-  /* Fading animation */
   
   .size-img {
     height: auto;
@@ -142,48 +100,33 @@ body {
     background: black;
   }
 
-  /* New code well.. the banner not the menu start here --------------------*/
+  /*---------------------new code below-------------------------*/
   .container {
     width: 980px;
     margin: auto ;
   }
 
-  .inner-container{
-    display: flex;
-    width: 980px;
-    margin: 100px 0px;
-  }
-
-  .banner-right{
-    padding: 100px 0px 10px 40px;
-  }
-
-  .timer{
-    margin: 0px;
-  }
-
-  h5{
-    margin: 0px 0px 40px 16px;
-  }
-
-  .btn-launches{
-    color: black;
-    background-color: #e63946;
-    padding: 20px 83px;
-  }
-
-  .btn-launches:hover{
-    background-color: #c73946;
+  .inner-container {
+    display: block;
+    text-align: center;
   }
 
   .container-text-date{
     display: flex;
   }
 
-  .banner-btn{
-    margin: 0px 0px;
+  h5{
+    margin: 0px 0px 40px 16px;
   }
-/* new items abov--------------------------------------*/
+
+  .left-date {
+      padding-left: 385px;
+  }
+
+  .timer {
+      margin-bottom: 0px;
+      margin-top: 170px;
+  }
 
 
 
@@ -193,7 +136,16 @@ body {
 
 
 
-  
+
+
+
+
+
+
+
+
+
+
   @media only screen and (min-width: 766px) {
   
   
