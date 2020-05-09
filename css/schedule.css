@@ -123,12 +123,58 @@ body {
       padding-left: 385px;
   }
 
-  .timer {
+  .title-banner {
       margin-bottom: 0px;
       margin-top: 170px;
+      font-size: 38px;
   }
 
+  .timer{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #e63946;
+  }
+  .card-holder{
+    display: flex;
+    background-color: #a8dadc;
+  }
 
+.card-title-date{
+  padding: 32px 32px 0px 32px;
+  margin: 0px;
+}
+
+.card-secound-date{
+  padding: 0px 32px 32px 32px;
+  margin: 0px;
+}
+
+.rocket-name{
+  margin: 0px;
+  padding: 32px 32px 0px 0px;
+}
+
+.mission-name{
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.location{
+  margin: 0px;
+}
+
+.btn{
+  background-color: #1d3557;
+  color: #f1faee;
+  padding: 26px 39px;
+  font-size: 20px;
+  margin: 50px 0px 0px 192px;
+}
+
+.btn:hover{
+  background-color: #457b9d;
+  transition: all 0.6s ease 0s;
+}
 
 
 
@@ -616,6 +662,14 @@ body {
 
    .banner-btn{
     margin: 20px 0px;
+   }
+
+   .card-secound-date{
+     color: black;
+   }
+
+   .rocket-name{
+     color: black;
    }
 
   }
