@@ -63,46 +63,39 @@
         </a>
       </div>
 
-    <!-----------------------menu over end here----------------------------->
-
-    <div class="container">
-        <div class="inner-container">
-          <div class="banner-right">
-            <div>
-              <h1 class="title-banner rocket-font">NEXT LAUNCH</h1>
-              <h1 class="rocket-font timer">29:22:04:12</h1>
-              <div class="container-text-date padding-work">
-                <h5 class="left-date">DAYS</h5>
-                <h5>HOUR</h5>
-                <h5>MIN</h5>
-                <h5>SEC</h5>
-              </div>
+      <main class="container content">
+        <h1>Contact</h1>
+        <form id="contactForm">
+            <div class="form-group">
+                <input class="form-control" name="firstName" id="firstName" placeholder="First name">
+                <div class="form-error" id="firstNameError">Please enter your first name</div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!--------------------Card holder----------------------->
-    <div class="card-script card-holder container">
-      <div class="left-card">
-        <div><h1 class="rocket-font card-title-date">MAY 1</h1></div>
-        <div><h3 class="rocket-font card-secound-date">01-05-2020</h3></div>
-      </div>
-      <div class="right-card">
-        <div><h3 class="rocket-font rocket-name">FALCON-42</h3></div>
-        <div><h4 class="rocket-font mission-name">Starlink</h4></div>
-        <div><h5 class="rocket-font location">Cap Canaveral Air Force Space Launch Complex 40</h5></div>
-      </div>
-      <div class="card-more">
-        <a href="details.html">
-        <button class="btn rocket-font">More detail</button>
-      </a>
-      </div>
-    </div>
-    <!----------------------------Card end----------------------------->
 
-    <div class="card-script">
+            <div class="form-group">
+                <input class="form-control" name="lastName" id="lastName" placeholder="Last name">
+                <div class="form-error" id="lastNameError">Please enter your last name</div>
+            </div>
 
-    </div>
-    <script src="./js/script.js"></script>
-</body>
-</html>
+            <div class="form-group">
+                <input class="form-control" name="email" id="email" placeholder="Email">
+                <div class="form-error" id="emailError">Please enter your email address</div>
+                <div class="form-error" id="invalidEmailError">Please enter a valid email address</div>
+            </div>
+
+            <div class="form-group">
+                <textarea class="form-control" name="message" id="message" placeholder="Message (at least 10 characters)"></textarea>
+                <div class="form-error" id="messageError">The message must be at least 10 characters.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        </form>
+    </main>
+
+
+
+
+
+
+      <script src="./js/contact.js"></script>
+    </body>
+    </html>

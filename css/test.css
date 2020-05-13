@@ -183,6 +183,18 @@ body {
   .banner-btn{
     margin: 0px 0px;
   }
+
+  .detail-info {
+    width: 550px;
+  }
+
+  .left{
+    margin-left: 51px;
+  }
+
+  .detail-container{
+    margin-top: 140px;
+  }
 /* new items abov--------------------------------------*/
 
 
@@ -665,6 +677,19 @@ body {
    .banner-btn{
     margin: 20px 0px;
    }
+
+   .container-text-date{
+    display: block;
+  }
+
+  .left{
+    font-size: 150%;
+    margin-left: 10%;
+  }
+
+  .right{
+    display: none;
+  }
 
   }
   
