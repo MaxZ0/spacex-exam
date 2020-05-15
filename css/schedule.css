@@ -163,13 +163,24 @@ body {
   margin: 0px;
 }
 
-.btn{
+/*.btn{
   background-color: #1d3557;
   color: #f1faee;
-  padding: 26px 39px;
+  padding: 26px 69px;
   font-size: 20px;
-  margin: 50px 0px 0px 192px;
+  margin: 50px 0px 0px 150px;
+}*/
+
+.btn {
+  background-color: #1d3557;
+  color: #f1faee;
+  padding: 0px 0px;
+  width: 250px;
+  height: 90px;
+  font-size: 20px;
+  margin: 50px 0px 0px 123px;
 }
+
 
 .btn:hover{
   background-color: #457b9d;
@@ -190,7 +201,22 @@ form{
   display: none;
 }
 
+.card-per{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
 
+.space-between{
+  margin: 16px;
+}
+
+.right-card{
+  width: 267px;
+}
+
+.left-card{
+  width: 340px;
+}
 
 
 
@@ -680,11 +706,82 @@ form{
 
    .card-secound-date{
      color: black;
+     font-size: 2em;
+     width: 298px;
    }
 
    .rocket-name{
-     color: black;
+    color: black;
+    font-size: 3em;
+    width: 231px;
+    margin-left: 156px;
+    text-align: left;
    }
+
+   .mission-name{
+    color: black;
+    font-size: 2em;
+    width: 780px;
+    margin-left: 156px;
+    text-align: left;
+    padding-top: 16px;
+   }
+
+
+   .card-holder{
+    display: block;
+    background-color: #a8dadc;
+  }
+
+  .card-more{
+    text-align: center;
+  }
+
+  .btn {
+    margin: 36px 0px 0px 0px;
+    width: 974px;
+  }
+
+  .left-card{
+    text-align: center;
+    margin-left: 300px;
+  }
+
+  .container{
+    width: 974px;
+  }
+
+  .card-title-date{
+    font-size: 4em;
+    padding: 32px 0px 0px 0px;
+    margin: 0px 0px 0px -40px;
+  }
+
+  .title-banner{
+    font-size: 5em;
+  }
+  .timer{
+    font-size: 4em;
+    margin-bottom: 64px;
+  }
+
+  .space-between{
+    margin: 63px;
+  }
+
+  .normal-font{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .location{
+    color: black;
+    font-size: 2em;
+    width: 731px;
+    margin-left: 156px;
+    text-align: left;
+    padding-top: 16px;
+  }
+
 
   }
   

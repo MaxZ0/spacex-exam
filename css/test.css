@@ -209,6 +209,11 @@ body {
   @media only screen and (min-width: 766px) {
   
   
+    .container {
+      width: 766px;
+      margin: auto ;
+    }
+
     .menu {
       display: flex;
       justify-content: flex-end;
@@ -667,7 +672,7 @@ body {
     }
     
     .banner-right{
-    padding: 10px 0px 10px 0px;
+    padding: 100px 0px 0px 32px;;
   }
 
    .container-text-date{
@@ -676,10 +681,11 @@ body {
 
    .banner-btn{
     margin: 20px 0px;
+    text-align: left;
    }
 
    .container-text-date{
-    display: block;
+    display: none;
   }
 
   .left{
@@ -689,6 +695,26 @@ body {
 
   .right{
     display: none;
+  }
+
+  .mobil-size-title{
+    text-align: center;
+    font-size: 2em;
+
+  }
+  .mobil-size-title-timer{
+    text-align: center;
+    font-size: 2em;
+
+  }
+  .mobil-size-title-button{
+    text-align: center;
+    font-size: 2em;
+
+  }
+
+  .btn-launches{
+    padding: 20px 59px;
   }
 
   }

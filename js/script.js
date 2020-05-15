@@ -57,7 +57,7 @@ function displayLaunches(cardsArray) {
         document.getElementsByClassName("timer").innerHTML = "NEXT LAUCH COMMING UP";
       }
     }, 1000);
-    console.log(countDownDate);*/ //timer end here -----------------------------
+    console.log(countDownDate);*/             //timer end here -----------------------------
   
 
 
@@ -67,20 +67,23 @@ function displayLaunches(cardsArray) {
     }
 
     html += `
-  <div class="card-script card-holder container">
-      <div class="left-card">
-      <div><h1 class="rocket-font card-title-date">${ddmmyy}</h1></div>
-      <div><h3 class="rocket-font card-secound-date">${card.launch_date_unix}</h3></div>
+    <div class="per-card">
+      <div class="card-script card-holder container">
+        <div class="left-card">
+          <div><h1 class="rocket-font card-title-date">${ddmmyy}</h1></div>
+          <div><h3 class="rocket-font card-secound-date">Launching date</h3></div>
+        </div>
+        <div class="right-card">
+          <div><h3 class="rocket-font rocket-name normal-font">${card.rocket.rocket_name}</h3></div>
+          <div><h4 class="rocket-font mission-name normal-font">${card.mission_name}</h4></div>
+          <div><h5 class="rocket-font location normal-font">${card.launch_site.site_name_long}</h5></div>
+        </div>
+        <div class="card-more">
+          <button class="btn rocket-font">More detail</button>
+        </div>
+      </div>
     </div>
-    <div class="right-card">
-      <div><h3 class="rocket-font rocket-name">${card.rocket.rocket_name}</h3></div>
-      <div><h4 class="rocket-font mission-name">${card.mission_name}</h4></div>
-      <div><h5 class="rocket-font location">${card.launch_site.site_name_long}</h5></div>
-    </div>
-    <div class="card-more">
-      <button class="btn rocket-font">More detail</button>
-    </div>
-  </div>`;
+    <div class="space-between"></div>`;
   });
 
   flightContainer.innerHTML = html;
