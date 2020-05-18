@@ -211,7 +211,7 @@ body {
   
     .container {
       width: 766px;
-      margin: auto ;
+      margin: 0px auto ;
     }
 
     .menu {
@@ -363,6 +363,7 @@ body {
       z-index: 2;
   
       -webkit-touch-callout: none;
+      width: 360px;
     }
   
     .menuToggle span {
@@ -581,7 +582,7 @@ body {
       width: auto;
       height: 50px;
       text-align: center;
-      margin: 0px 0px 32px 0px;
+      margin: 6px 0px 32px 0px;
     }
   
     .logo img {
@@ -665,10 +666,13 @@ body {
     .inner-container {
       display: block;
       text-align: center;
+      width: 320px;
+      margin: 100px auto;
     }
 
     .rocket-img {
-      display: none;
+      height: 200px;
+      text-align: left;
     }
     
     .banner-right{
@@ -700,11 +704,14 @@ body {
   .mobil-size-title{
     text-align: center;
     font-size: 2em;
+    width: 310px;
 
   }
   .mobil-size-title-timer{
     text-align: center;
     font-size: 2em;
+    width: 300px;
+    margin-bottom: 36px;
 
   }
   .mobil-size-title-button{
@@ -717,5 +724,29 @@ body {
     padding: 20px 59px;
   }
 
+  .banner-right{
+    padding: 0px;;
   }
+
+  .btn-launches{
+    padding: 19px;
+    font-size: 25px;
+  }
+
+  .container{
+    width: 100%;
+  }
+
+
+  }
+
+    /*Ipad*/
+    @media only screen and (max-width: 768px) {
+  
+      .banner-right {
+        width: 360px;
+    }
+
+
+    }
   

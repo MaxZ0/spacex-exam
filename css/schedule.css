@@ -102,7 +102,6 @@ body {
 
   /*---------------------new code below-------------------------*/
   .container {
-    width: 980px;
     margin: auto ;
   }
 
@@ -137,6 +136,7 @@ body {
   .card-holder{
     display: flex;
     background-color: #a8dadc;
+    width: 992px;
   }
 
 .card-title-date{
@@ -178,7 +178,7 @@ body {
   width: 250px;
   height: 90px;
   font-size: 20px;
-  margin: 50px 0px 0px 123px;
+  margin: 50px 0px 0px 36px;
 }
 
 
@@ -211,13 +211,16 @@ form{
 }
 
 .right-card{
-  width: 267px;
+  width: 607px;
 }
 
 .left-card{
   width: 340px;
 }
 
+.padding-work{
+  padding: 0px 0px 36px 0px;
+}
 
 
 
@@ -356,6 +359,7 @@ form{
   
       -webkit-user-select: none;
       user-select: none;
+      width: 360px;
     }
   
     .menuToggle a {
@@ -510,7 +514,7 @@ form{
       font-size: 14px;
     }
 
-    .button {
+    .a {
       display: block;
       width: 30%;
       border-radius: 10px;
@@ -524,7 +528,7 @@ form{
       margin: 16px auto;
     }
   
-    .button:hover {
+    .a:hover {
       background-color: #346494;
       color: white;
     }
@@ -600,9 +604,8 @@ form{
   
     .logo {
       width: auto;
-      height: 50px;
       text-align: center;
-      margin: 0px 0px 32px 0px;
+      margin: 8px 0px 32px 0px;
     }
   
     .logo img {
@@ -708,21 +711,22 @@ form{
      color: black;
      font-size: 2em;
      width: 298px;
+     padding: 0px;
+     text-align: left;
    }
 
    .rocket-name{
     color: black;
     font-size: 3em;
     width: 231px;
-    margin-left: 156px;
+    margin-left: 36px;
     text-align: left;
    }
 
    .mission-name{
     color: black;
     font-size: 2em;
-    width: 780px;
-    margin-left: 156px;
+    margin-left: 36px;
     text-align: left;
     padding-top: 16px;
    }
@@ -731,38 +735,45 @@ form{
    .card-holder{
     display: block;
     background-color: #a8dadc;
+    width: 360px;
   }
 
   .card-more{
     text-align: center;
+      display: flex;
+      background-color: #a8dadc;
+      width: 360px;
   }
 
   .btn {
     margin: 36px 0px 0px 0px;
-    width: 974px;
+    width: 100%;
   }
 
   .left-card{
     text-align: center;
-    margin-left: 300px;
+    margin-left: 36px;
   }
 
-  .container{
-    width: 974px;
-  }
 
   .card-title-date{
-    font-size: 4em;
+    font-size: 40px;
     padding: 32px 0px 0px 0px;
-    margin: 0px 0px 0px -40px;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
   }
 
   .title-banner{
-    font-size: 5em;
+    font-size: 3em;
+    text-align: left;
+    margin-left: 36px;
+    margin-top: 30px;
   }
   .timer{
-    font-size: 4em;
-    margin-bottom: 64px;
+    font-size: 2em;
+    margin-bottom: 53px;
+    text-align: left;
+    margin-left: 36px;
   }
 
   .space-between{
@@ -775,13 +786,30 @@ form{
 
   .location{
     color: black;
-    font-size: 2em;
-    width: 731px;
-    margin-left: 156px;
+    font-size: 1em;
+    width: 100%;
+    margin-left: 36px;
     text-align: left;
     padding-top: 16px;
+    
   }
 
+  .right-card{
+    width: 267px;
+  }
 
   }
+
+  /*Ipad*/
+  @media only screen and (max-width: 768px) {
   
+    .card-holder{
+      width: 768px;
+    }
+
+
+    .menu-top-right-ipad{
+      margin-right: 86px;
+    }
+  
+  }

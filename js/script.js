@@ -38,30 +38,6 @@ function displayLaunches(cardsArray) {
 
     var ddmmyy = pad(month + 1) + "/" + pad (date) + "/" + year;
 
-
-    /*var countDownDate = new Date(javaDate).getTimer(); //countDownTimer here <-------
-    var x = setInterval(function(){
-      var now = Date().getTimer();
-      var distance = countDownDate - now;
-
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var secounds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      document.getElementsByClassName("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + secounds + "s ";
-
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementsByClassName("timer").innerHTML = "NEXT LAUCH COMMING UP";
-      }
-    }, 1000);
-    console.log(countDownDate);*/             //timer end here -----------------------------
-  
-
-
-
     if (card.timeline === null && card.timeline === "" && card.timeline) { // if value does exist 
       card.timeline = timeLine; // put default value
     }
@@ -89,5 +65,10 @@ function displayLaunches(cardsArray) {
   flightContainer.innerHTML = html;
 
 };
+
+
+
+
+
 
 
