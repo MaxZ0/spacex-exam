@@ -170,6 +170,7 @@ body {
     color: black;
     background-color: #e63946;
     padding: 20px 83px;
+    margin-left: 36px;
   }
 
   .btn-launches:hover{
@@ -195,6 +196,15 @@ body {
   .detail-container{
     margin-top: 140px;
   }
+
+  .container-text-date {
+    display: none;
+}
+
+.text-box{
+  width: 342px;
+}
+
 /* new items abov--------------------------------------*/
 
 
@@ -722,6 +732,7 @@ body {
 
   .btn-launches{
     padding: 20px 59px;
+    margin: 0px;
   }
 
   .banner-right{
@@ -737,6 +748,9 @@ body {
     width: 100%;
   }
 
+  .text-box{
+    width: 300px;
+  }
 
   }
 

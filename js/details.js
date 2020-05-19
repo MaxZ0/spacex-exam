@@ -1,42 +1,25 @@
-/*const queryString = document.location.search;
+const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 
-let flight_number;
+let id;
 
 if (params.has("flight_number")){
-    flight_number = params.get("flight_number");
+  id = params.get("flight_number");
 } else {
-    document.location.href = "/";
 }
 
-const baseUrl = "https://api.spacexdata.com/v3/";
-const upcomingLaunchesUrl = `${baseUrl}launches/upcoming`; 
-const detailsUrl = `${upcomingLaunchesUrl}${flight_number}`;
+baseUrl = "https://api.spacexdata.com/v3/";
+const rocketUrl = `${baseUrl}launches/upcoming/`;
+const detailsUrl = `${rocketUrl}${id}`;
+
 
 fetch(detailsUrl)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(json){
-        createDetails(json);
-    })
-    .catch(function(){
-        document.location.href = "error.html";
-    });
-
-function createDetails(details){
-    console.dir(details);
-    const heading = document.querySelector
-}*/
-
-baseUrl = "https://api.spacexdata.com/v3/launches/upcoming";
-
-fetch(baseUrl)
   .then(function (response) {
     return response.json();
   })
   .then(function (json) {
-    displayLaunches(json); // calling disaplayLaunches function
+    displayDetails(json); // calling disaplayLaunches function
+    console.log("json", json);
 
   })
   .catch(function (error) {
@@ -44,52 +27,26 @@ fetch(baseUrl)
   });
 
 
-function displayLaunches(cardsArray) {
-  const flightNumber = cardsArray; 
-  const flightContainer = document.querySelector(".card-script");
-  let html = "";
 
-  flightNumber.forEach(function (card) {
-    let timeLine = "No timeline available"; // default value, if property is empty,null or undefined
-    console.log("card:", card);
+function displayDetails(details) {
+  console.dir(details);
 
-    const localDate = (card.launch_date_local); //doing date here
-    var javaDate = new Date(localDate);
+  const showName = document.querySelector("#name");
+  showName.innerHTML = card.rocket.rocket_name;
 
-    function pad(n){
-      return n<10 ? '0'+n : n;
-    };
-    var currentDate = new Date(javaDate);
-    var date = currentDate.getDate();
-    var month = currentDate.getMonth();
-    var year = currentDate.getFullYear();
+  const showSpecies = document.querySelector("#species");
+  showSpecies.innerHTML = details.species;
 
-    var ddmmyy = pad(month + 1) + "/" + pad (date) + "/" + year;
+  const showOrigin = document.querySelector("#origin");
+  showOrigin.innerHTML = details.origin.name;
 
-    if (card.timeline === null && card.timeline === "" && card.timeline) { // if value does exist 
-      card.timeline = timeLine; // put default value
-    }
+  const showLocation = document.querySelector("#location");
+  showLocation.innerHTML = details.location.name;
 
-    html += `
-    <div class="per-card">
-      <div class="card-script card-holder container">
-        <div class="left-card">
-          <div><h1 class="rocket-font card-title-date">${ddmmyy}</h1></div>
-          <div><h3 class="rocket-font card-secound-date">Launching date</h3></div>
-        </div>
-        <div class="right-card">
-          <div><h3 class="rocket-font rocket-name normal-font">${card.rocket.rocket_name}</h3></div>
-          <div><h4 class="rocket-font mission-name normal-font">${card.mission_name}</h4></div>
-          <div><h5 class="rocket-font location normal-font">${card.launch_site.site_name_long}</h5></div>
-        </div>
-        <div class="card-more">
-          <button class="btn rocket-font">More detail</button>
-        </div>
-      </div>
-    </div>
-    <div class="space-between"></div>`;
-  });
+  const showImage = document.querySelector(".details-image");
+  showImage.src = details.image;
+  showImage.alt = details.name;
 
-  flightContainer.innerHTML = html;
-
-};
+  const tittleDetails = `${details.name}`;
+  document.title = tittleDetails;
+}

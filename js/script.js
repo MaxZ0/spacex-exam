@@ -55,7 +55,7 @@ function displayLaunches(cardsArray) {
           <div><h5 class="rocket-font location normal-font">${card.launch_site.site_name_long}</h5></div>
         </div>
         <div class="card-more">
-          <button class="btn rocket-font">More detail</button>
+          <a href="launches.html?id=${card.flight_number}">READ MORE</a>
         </div>
       </div>
     </div>
