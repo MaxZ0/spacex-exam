@@ -807,6 +807,23 @@ form{
     width: 267px;
   }
 
+
+  a.button{
+    padding: 36px;
+    margin-left: 36px;
+    margin-top: 16px;
+    background-color: #457B9D;
+    color: #F1FAEE;
+    width: 200px;
+    font-size: 19px;
+
+  }
+
+  .button:hover {
+    background-color: #1D3557;
+    color: white;
+  }
+
   }
 
   /*Ipad*/

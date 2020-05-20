@@ -307,6 +307,23 @@ body {
     .display-title {
       display: none;
     }
+
+    .detail-img{
+      width: 50%;
+      margin-bottom: 56px;
+    }
+
+    .launch-patch{
+      text-align: center;
+    }
+
+    .detail-text{
+      background-color: #1D3557;
+    color: #F1FAEE;
+    padding: 16px;
+    font-size: 22px;
+    }
+
   
   }
   
@@ -345,6 +362,7 @@ body {
   
       -webkit-user-select: none;
       user-select: none;
+      width: 300px;
     }
   
     .menuToggle a {
@@ -373,7 +391,7 @@ body {
       z-index: 2;
   
       -webkit-touch-callout: none;
-      width: 360px;
+      width: 300px;
     }
   
     .menuToggle span {
@@ -750,6 +768,32 @@ body {
 
   .text-box{
     width: 300px;
+  }
+
+  .detail-img{
+    width: 300px;
+  }
+
+  .launch-patch{
+    text-align: center;
+  }
+
+  .value{
+    font-size: 16px;
+  }
+
+  .launch{
+    padding: 16px;
+  }
+
+  .breadcrumb-nav{
+    padding: 0px 0px 0px 16px;
+  }
+
+  .detail-text{
+    background-color: #1D3557;
+    color: #F1FAEE;
+    padding: 16px;
   }
 
   }

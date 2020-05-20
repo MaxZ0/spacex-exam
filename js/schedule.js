@@ -1,13 +1,13 @@
 /*const baseUrl = "https://api.spacexdata.com/v3/";
 const upcomingLaunchesUrl = `${baseUrl}launches/upcoming`; */
 
-baseUrl = "https://api.spacexdata.com/v3/launches/upcoming";
+const baseUrl = "https://api.spacexdata.com/v3/launches/upcoming";
 
 fetch(baseUrl)
   .then(function (response) {
     return response.json();
   })
-  .then(function (json) {
+  .then(function(json) {
     displayLaunches(json); // calling disaplayLaunches function
 
   })
@@ -17,13 +17,13 @@ fetch(baseUrl)
 
 
 function displayLaunches(cardsArray) {
-  const flightNumber = cardsArray; 
+  const flightNumber = cardsArray;
+
   const flightContainer = document.querySelector(".card-script");
   let html = "";
 
   flightNumber.forEach(function (card) {
     let timeLine = "No timeline available"; // default value, if property is empty,null or undefined
-    console.log("card:", card);
 
     const localDate = (card.launch_date_local); //doing date here
     var javaDate = new Date(localDate);
@@ -55,7 +55,7 @@ function displayLaunches(cardsArray) {
           <div><h5 class="rocket-font location normal-font">${card.launch_site.site_name_long}</h5></div>
         </div>
         <div class="card-more">
-          <a href="launches.html?id=${card.flight_number}">READ MORE</a>
+          <a class="button" href="launch-detail.html?id=${card.flight_number}">READ MORE</a>
         </div>
       </div>
     </div>
