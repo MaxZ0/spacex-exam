@@ -71,7 +71,7 @@ body {
     width: auto;
     height: 50px;
     text-align: center;
-    margin: 0px 0px 32px 0px;
+    margin: -104px 0px 16px 40px
   }
   
   .logo img {
@@ -227,6 +227,71 @@ form{
   margin: 70px 0px 0px 0px;
 }
 
+.schedule-button{
+  color: #F1FAEE;
+    text-decoration: none;
+    background-color: black;
+    padding: 16px;
+    margin-left: 36px;
+}
+
+.schedule-button:hover{
+  background-color: #457b9d;
+  transition: all 0.6s ease 0s;
+}
+
+.footer-ul{
+  display: flex;
+  padding: 36px;
+  width: 900px;
+  margin: auto;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: 500px;
+}
+
+.footer-li{
+  margin: 0px 0px 0px 16px;
+  list-style-type: none;
+}
+
+.footer-a{
+  color: #F1FAEE;
+}
+
+.fa:hover{
+  opacity: 0.8;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-twitter{
+  margin-left: 200px;
+}
+
+.dropdown{
+  height: 50px;
+}
+
+.logo {
+  margin: 20px 16px 0px 0px;
+}
+
+.breadcrumb-nav{
+  margin-top: 36px;
+}
 
 
 
@@ -364,7 +429,7 @@ form{
   
       -webkit-user-select: none;
       user-select: none;
-      width: 360px;
+      width: 300px;
     }
   
     .menuToggle a {
@@ -762,6 +827,7 @@ form{
   .left-card{
     text-align: center;
     margin-left: 36px;
+    width: 100%;
   }
 
 
@@ -824,18 +890,57 @@ form{
     color: white;
   }
 
+  .schedule-button{
+    padding: 16px 86px;
+    margin: 36px 36px 0px 36px;
+  }
+  .footer-ul{
+    display: block;
   }
 
-  /*Ipad*/
-  @media only screen and (max-width: 768px) {
-  
-    .card-holder{
-      width: 768px;
-    }
+  .footer-a{
+    color: #F1FAEE;
+    margin: 16px 0px 16px 0px;
+    text-decoration: none;
+  }
 
+  .footer-wrapper{
+    padding: 16px;
+  }
 
-    .menu-top-right-ipad{
-      margin-right: 86px;
-    }
-  
+  .footer-li{
+    margin-top: 16px;
+  }
+
+  ul{
+    list-style-type: none;
+  }
+
+  footer {
+    clear: both;
+    position: relative;
+    height: 380px;
+    margin-top: 500px;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px -8px;
+    border-radius: 50%;
+}
+
+.sosial-media-container {
+  margin-top: 36px;
+}
+
+.footer-ul {
+  padding: 36px;
+  width: 300px;
+  margin: auto;
+}
+
   }

@@ -126,6 +126,7 @@ body {
   
   a {
     text-decoration: none;
+    color: #457B9D;
   }
   
   .gray {
@@ -150,7 +151,7 @@ body {
 
   .inner-container{
     display: flex;
-    width: 980px;
+    width: 100%;
     margin: 100px 0px;
   }
 
@@ -205,6 +206,70 @@ body {
   width: 342px;
 }
 
+.logo {
+  margin: 16px 0px 16px -50px;
+}
+
+/* ----------------------footer under*/
+
+.footer-ul{
+  display: flex;
+  padding: 36px;
+  width: 900px;
+  margin: auto;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: 500px;
+}
+
+.footer-li{
+  margin: 0px 0px 0px 16px;
+  list-style-type: none;
+}
+
+.footer-a{
+  color: #F1FAEE;
+}
+
+.fa:hover{
+  opacity: 0.8;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-twitter{
+  margin-left: 200px;
+}
+
+.dropdown{
+  height: 50px;
+}
+
+.logo {
+  width: auto;
+  height: 50px;
+  text-align: center;
+  margin: 53px 0px 16px 40px
+}
+
+.breadcrumb-nav{
+  margin-top: 36px;
+}
+
+
+
 /* new items abov--------------------------------------*/
 
 
@@ -245,7 +310,7 @@ body {
     }
   
     ul.menu {
-      margin: 20px 0px -68px 0px;
+      margin: 20px 0px -103px 0px;
     }
   
     .menu-li:hover {
@@ -788,6 +853,7 @@ body {
 
   .breadcrumb-nav{
     padding: 0px 0px 0px 16px;
+    display: none;
   }
 
   .detail-text{
@@ -796,15 +862,64 @@ body {
     padding: 16px;
   }
 
+  .under-banner{
+    width: auto;
   }
 
-    /*Ipad*/
-    @media only screen and (max-width: 768px) {
-  
-      .banner-right {
-        width: 360px;
-    }
 
 
-    }
+  /*--------------------footer down here*/
+
+
+  .footer-ul{
+    display: block;
+  }
+
+  .footer-a{
+    color: #F1FAEE;
+    margin: 16px 0px 16px 0px;
+    text-decoration: none;
+  }
+
+  .footer-wrapper{
+    padding: 16px;
+  }
+
+  .footer-li{
+    margin-top: 16px;
+  }
+
+  ul{
+    list-style-type: none;
+  }
+
+  footer {
+    clear: both;
+    position: relative;
+    height: 380px;
+    margin-top: 500px;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px -8px;
+    border-radius: 50%;
+}
+
+.sosial-media-container {
+  margin-top: 36px;
+}
+
+.footer-ul {
+  padding: 6px;
+  width: 300px;
+  margin: auto;
+}
+
+  }
+
   

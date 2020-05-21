@@ -21,7 +21,7 @@ fetch(rocketUrl)
     console.log(launch);
 
     let missionPatch = "";
-    if(launch.links.mission_patch === undefined){
+    if(launch.links.mission_patch == undefined){
       missionPatch = "./img/rocket.png";
     } else {
       missionPatch = launch.links.mission_patch;
