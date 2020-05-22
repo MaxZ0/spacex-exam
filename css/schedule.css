@@ -15,6 +15,10 @@ body {
       font-family: 'Audiowide', cursive;
   }
 
+  .breadcrumb{
+    color: #457B9D;
+  }
+
   .topnav {
     position: relative;
     overflow: hidden;
@@ -289,6 +293,12 @@ footer {
   margin: 20px 16px 0px 0px;
 }
 
+.footer-a:hover{
+  color: lightgrey;
+}
+
+
+
 
 
 
@@ -317,7 +327,6 @@ footer {
   
     .menu-li {
       padding: 16px 16px;
-      color: black;
     }
   
     .logo img {
@@ -346,7 +355,6 @@ footer {
       font-size: 16px;
       border: none;
       outline: none;
-      color: black;
       padding: 14px 16px;
       background-color: inherit;
       font-family: inherit;
