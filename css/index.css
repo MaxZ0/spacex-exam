@@ -731,7 +731,6 @@ footer {
     background-color: black;
   }
 
-<<<<<<< HEAD
     .menu {
       display: flex;
       justify-content: flex-end;
@@ -814,11 +813,6 @@ footer {
     .display-title {
       display: none;
     }
-=======
-  footer {
-    background-color: black;
-  }
->>>>>>> 81aeaa7b4c0d2033d921b588e3ff9fd04895c65a
 
   .dropbtn {
     display: none;
