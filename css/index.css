@@ -310,7 +310,7 @@ footer {
 
   .logo img {
     display: flex;
-    margin: 0px 0px 0px -80px;
+    margin: 0px auto;
   }
 
   ul.menu {
